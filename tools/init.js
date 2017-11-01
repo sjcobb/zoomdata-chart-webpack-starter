@@ -67,10 +67,7 @@ _prompt.start();
 _prompt.message = '';
 
 // Clear console
-let lines = process.stdout.getWindowSize()[1];
-for (let i = 0; i < lines; i++) {
-	console.log('\r\n');
-}
+process.stdout.write('\x1B[2J\x1B[0f');
 
 if (!which('git')) {
 	console.log(colors.red('Sorry, this script requires git'));
