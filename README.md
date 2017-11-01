@@ -1,5 +1,6 @@
 # zoomdata-chart-webpack-starter
 A starter kit for for building a Zoomdata Custom Chart, featuring Webpack
+![2017-11-01_09-29-09](https://user-images.githubusercontent.com/5589281/32281569-94efe688-bef5-11e7-8c4d-83e9448ad6a2.png)
 
 ### Prerequisites
 You need to download  and configure the zoomdata-chart-cli from npm
@@ -51,8 +52,6 @@ There is already set a `precommit` hook for formatting your code with Prettier :
 #### `Array.prototype.from`, `Promise`, `Map`... is undefined?
 
 Babel only provides down-emits on syntactical features (`class`, `let`, `async/await`...), but not on functional features (`Array.prototype.find`, `Set`, `Promise`...), . For that, you need Polyfills, such as [`babel-polyfill`](https://babeljs.io/docs/usage/polyfill/).
-
-For a library, `core-js` plays very nicely, since you can import just the polyfills you need:
 
 ```javascript
 import "babel-polyfill/core-js/modules/es6.promise";
