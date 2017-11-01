@@ -20,7 +20,7 @@
     "postinstall": "node tools/init.js"
   },
   "lint-staged": {
-    "{src}/**/*.(js|css)": [
+    "src/**/*.{js,css}": [
       "prettier --write --single-quote --trailing-comma=all",
       "git add"
     ]
