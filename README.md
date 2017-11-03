@@ -18,10 +18,7 @@ zd-chart pull MYCUSTOMCHART
 
 # Clone this repo into the newly created custom chart directory
 cd CUSTOMCHARTDIR
-git clone --no-checkout https://github.com/jonavila/zoomdata-chart-webpack-starter.git tmp
-mv tmp/.git .  
-rmdir tmp
-git reset --hard HEAD
+git clone --no-checkout https://github.com/jonavila/zoomdata-chart-webpack-starter.git tmp && mv tmp/.git . && rmdir tmp && git reset --hard HEAD
 
 # Run npm install and write your chart name when asked. That's all!
 npm install
