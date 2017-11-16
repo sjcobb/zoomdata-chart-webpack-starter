@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 const parts = require('./webpack.parts');
 
 const PATHS = {
-	app: path.join(__dirname, 'src', '--chartname--'),
+	app: path.join(__dirname, 'src'),
 	build: path.join(__dirname, 'components'),
 };
 
@@ -68,7 +68,7 @@ module.exports = env => {
 	const pages = [
 		parts.page({
 			entry: {
-				app: PATHS.app,
+				app: PATHS.app + '/--chartname--',
 			},
 		}),
 	];
