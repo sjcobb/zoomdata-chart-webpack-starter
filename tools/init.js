@@ -12,7 +12,7 @@ const omit = require('lodash.omit');
 
 // Note: These should all be relative to the project root directory
 const rmDirs = ['.git', 'tools'];
-const rmFiles = ['tools/init.js'];
+const rmFiles = ['tools/init.js', '.travis.yml'];
 const modifyFiles = [
 	'LICENSE',
 	'package.json',
