@@ -1,6 +1,5 @@
 # zoomdata-chart-webpack-starter
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jonavila/zoomdata-chart-webpack-starter.svg)](https://greenkeeper.io/)
 A starter kit for for building a Zoomdata Custom Chart, featuring Webpack
 ![2017-11-01_09-29-09](https://user-images.githubusercontent.com/5589281/32281569-94efe688-bef5-11e7-8c4d-83e9448ad6a2.png)
 
