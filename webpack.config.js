@@ -59,7 +59,7 @@ const developmentConfig = merge([
   },
 ]);
 
-module.exports = env => {
+module.exports = mode => {
 	const pages = [
 		parts.page({
 			entry: {
