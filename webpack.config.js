@@ -33,7 +33,6 @@ const productionConfig = merge([
 			chunkFilename: 'Visualization.js',
 			filename: 'Visualization.js',
 		},
-		plugins: [new webpack.HashedModuleIdsPlugin()],
 	},
 	parts.clean(PATHS.build),
 	parts.minifyJavaScript(),
@@ -47,21 +46,17 @@ const productionConfig = merge([
 			},
 		},
 	}),
-	parts.setFreeVariable('process.env.NODE_ENV', 'production'),
 ]);
 
 const developmentConfig = merge([
-	{
-		output: {
-			devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]',
-		},
-		watch: true,
-		watchOptions: {
-			aggregateTimeout: 300,
-			poll: 1000,
-			ignored: /node_modules/,
-		},
-	},
+  {
+    watch: true,
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000,
+      ignored: /node_modules/,
+    },
+  },
 ]);
 
 module.exports = env => {
@@ -74,5 +69,5 @@ module.exports = env => {
 	];
 	const config = env === 'production' ? productionConfig : developmentConfig;
 
-	return merge([commonConfig, config].concat(pages));
+  return merge([commonConfig, config, { mode }].concat(pages));
 };
