@@ -67,7 +67,7 @@ module.exports = mode => {
 			},
 		}),
 	];
-	const config = env === 'production' ? productionConfig : developmentConfig;
+	const config = mode === 'production' ? productionConfig : developmentConfig;
 
   return merge([commonConfig, config, { mode }].concat(pages));
 };
