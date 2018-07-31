@@ -7,7 +7,7 @@ A starter kit for for building a Zoomdata Custom Chart, featuring Webpack
 You need to download  and configure the zoomdata-chart-cli from npm
 ```
 npm install zoomdata-chart-cli -g
-zd-chart-cli config
+zd-chart config
 # follow the prompts in the CLI to complete the configuration
 ```
 
